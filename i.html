@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Title</title>
+  <link rel="stylesheet" href="i.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar Navigation for Mobile -->
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="image1.jpg" alt="Image 1">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image2.jpg" alt="Image 2">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image4.jpg" alt="Image 4">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image5.jpg" alt="Image 5">
+      </div>
+
+      <!-- Previous and Next Buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
+
+  <!-- Product List -->
+  <section class="products">
+    <h2>Products</h2>
+    <ul>
+      <li>Product 1</li>
+      <li>Product 2</li>
+      <li>Product 3</li>
+      <li>Product 4</li>
+      <li>Product 5</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2021</p>
+  </footer>
+
+  <!-- JavaScript for Slideshow -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>

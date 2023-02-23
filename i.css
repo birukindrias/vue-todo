@@ -1,0 +1,124 @@
+
+/* Top Navigation Bar */
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-nav ul li {
+  margin-right: 20px;
+}
+
+.desktop-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.desktop-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sidebar Navigation for Mobile */
+.mobile-nav {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav ul li {
+  margin-bottom: 10px;
+}
+
+.mobile-nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section with Slideshow */
+.hero {
+  position: relative;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Product List */
+.products {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 30px;
+}
+
+.products ul {
+  list-style: none;
+  padding: 0;
+}
+
+.products ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
